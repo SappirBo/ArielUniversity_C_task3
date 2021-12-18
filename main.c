@@ -30,7 +30,7 @@ int main(){
     p = Atbash(word,txt);
     printf("Atbash Sequences: %s\n",p);
     p = Anagram(word,txt);
-    printf("Anagram Sequences: %s\n",p);
+    printf("Anagram Sequences: %s",p);
     
     return 0;
 }
