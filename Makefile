@@ -9,6 +9,6 @@ my_string.o: my_string.c my_string.h
 main.o: main.c my_string.h
 	gcc -Wall -g -c main.c 
 
-.PHONY: clean#.PHONY means that clean is not a file.
+.PHONY: clean #.PHONY means that clean is not a file.
 clean:
 	rm -f *.o *.a  stringProg
