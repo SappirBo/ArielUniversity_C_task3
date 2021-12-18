@@ -12,7 +12,7 @@ int geometricValue(char txt[],int start, int end){
     int value = 0;
     // int length = strlen(txt);
 
-    for(int i=start; i<=end && txt[i] != '~' && txt[i] != '\0' && txt[i] != '\n' ; i++){
+    for(int i=start; i<=end && txt[i] != '~'  ; i++){//&& txt[i] != '\0' && txt[i] != '\n'
         if(txt[i]>=97 && txt[i]<= 122){
             value += (txt[i]-96);   
         }
@@ -43,7 +43,7 @@ char* geometric(char word[], char txt[]){
         while(sum < gv && counter < strlen(txt)){
             counter++;
             if(((txt[i]>=65 && txt[i]<= 90) || (txt[i]>=97 && txt[i]<= 122)) && 
-                            ((txt[counter]>=65 && txt[counter]<= 90) || (txt[counter]>=97 && txt[counter]<= 122))){
+                            (txt[counter] != 126)){ //((txt[counter]>=65 && txt[counter]<= 90) || (txt[counter]>=97 && txt[counter]<= 122)) ||
                 sum = geometricValue(txt,i,counter);
             }
             if(sum >= gv){break;}
