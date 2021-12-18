@@ -6,6 +6,6 @@ The projects main functions are:
 * [Anagram Sequences](https://en.wikipedia.org/wiki/Anagram)
 the project include also a main.c to run the program.
 
-To compile the program I recommend using the Makefile.<br />
-make all - to compile everything ans get exe name "stringProg".<br />
-make clean - to delete evrything (exceptthe origin files).
+To compile the program I recommend using the Makefile:<br />
+* make all - to compile everything ans get exe name "stringProg".
+* make clean - to delete evrything (exceptthe origin files).
